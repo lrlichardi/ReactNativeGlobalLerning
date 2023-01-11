@@ -2,9 +2,9 @@ import React from 'react';
 import {StatusBar, StyleSheet, View, SafeAreaView} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Register} from './src/screens/register';
+// import {Register} from './src/screens/register';
 import {Login} from './src/screens/login';
-import {Home} from './src/screens/home';
+// import {Home} from './src/screens/home';
 import {Elipse} from './src/components/elipse';
 /**
  *
@@ -46,8 +46,8 @@ const App = () => {
         />
         <Elipse />
 
-        <Register />
-
+        {/* <Register /> */}
+        <Login />
       </View>
     </SafeAreaView>
   );

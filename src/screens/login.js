@@ -1,30 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import {TextLink} from '../components/textLink';
 import {Inputs} from '../components/Input';
 import loginImg from '../assets/login.png';
-
+import {email, password, titleSesion} from '../text-es.js';
 
 export const Login = ({navigation}) => {
-
-  /* 
-      FALTA LA FUNCION DE LOGIN Y QUE EL TECLADO NO TAPE LA PANTALLA
-  */
- 
+  const [emailInput, setEmailInput] = useState('');
+  const [passwordInput, setPasswordInput] = useState('');
 
   return (
     <View style={styles.containerLogin}>
-      <Text style={styles.title}>Aqui va el titulo</Text>
+      <Text style={styles.title}>{titleSesion}</Text>
       <Image source={loginImg} style={styles.image} />
       <View style={styles.containerInput}>
-        <Inputs />
-        <Inputs />
+        <Inputs placeholder={email} onChangeText={text => setEmailInput(text)} />
+        <Inputs
+          placeholder={password}
+          typeInput="password"
+          onChangeText={text => setPasswordInput(text)}
+        />
       </View>
       <View style={styles.containerlink}>
         <TextLink text={'Aqui va un link'} />
       </View>
       <View style={styles.containerButtons}>
-
         <TouchableOpacity style={styles.inputs}>
           <Text>Aqui va el boton</Text>
         </TouchableOpacity>
