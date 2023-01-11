@@ -27,7 +27,7 @@ export const Login = ({navigation}) => {
       </View>
       <View style={styles.containerButtons}>
         <TouchableOpacity style={styles.inputs}>
-          <Button title='Iniciar sesión' action={''}/>
+          <Button title='Iniciar sesión' action={() => console.log('boton preisonado')}/>
         </TouchableOpacity>
 
         <Text style={styles.text}>
