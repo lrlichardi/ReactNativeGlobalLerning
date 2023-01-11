@@ -4,6 +4,7 @@ import {TextLink} from '../components/textLink';
 import {Inputs} from '../components/Input';
 import loginImg from '../assets/login.png';
 import {email, password, titleSesion} from '../text-es.js';
+import Button from '../components/Button';
 
 export const Login = ({navigation}) => {
   const [emailInput, setEmailInput] = useState('');
@@ -26,7 +27,7 @@ export const Login = ({navigation}) => {
       </View>
       <View style={styles.containerButtons}>
         <TouchableOpacity style={styles.inputs}>
-          <Text>Aqui va el boton</Text>
+          <Button title='Iniciar sesión' action={''}/>
         </TouchableOpacity>
 
         <Text style={styles.text}>
