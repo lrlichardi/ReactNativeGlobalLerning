@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 import {Button} from '../components/Button';
 
-export const Tarea = () => {
+export const Task = () => {
   return (
     <View style={styles.container}>
       <View style={styles.containerTask}>
