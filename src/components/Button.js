@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
   container: {
     //alignItems: 'center',
     marginHorizontal: 0,
-    backgroundColor: '#2196F3',
-    borderRadius: 20,
+    backgroundColor: '#00cccc',//#2196F3
+    borderRadius: 30,
   },
   button: {
     width: 350,
